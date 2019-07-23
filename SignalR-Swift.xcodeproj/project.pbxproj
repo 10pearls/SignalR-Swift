@@ -329,7 +329,6 @@
 				C9330B241E1FE59A00B1F2D5 /* Frameworks */,
 				C9330B251E1FE59A00B1F2D5 /* Headers */,
 				C9330B261E1FE59A00B1F2D5 /* Resources */,
-				BE9A67E61EA448B742E04260 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,7 +348,6 @@
 				C9330B2E1E1FE59A00B1F2D5 /* Frameworks */,
 				C9330B2F1E1FE59A00B1F2D5 /* Resources */,
 				1408BA98AFE158F7832B6F37 /* [CP] Embed Pods Frameworks */,
-				E29934DC4C7132EA079822B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -374,13 +372,13 @@
 					C9330B271E1FE59A00B1F2D5 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8Z35TU97D6;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					C9330B301E1FE59A00B1F2D5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8Z35TU97D6;
-						LastSwiftMigration = 0820;
+						DevelopmentTeam = WY68KV34G4;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -390,6 +388,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = C9330B1E1E1FE59A00B1F2D5;
@@ -427,24 +426,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SignalR-SwiftTests/Pods-SignalR-SwiftTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SignalR-SwiftTests/Pods-SignalR-SwiftTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Mockit/Mockit.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignalR-SwiftTests/Pods-SignalR-SwiftTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SignalR-SwiftTests/Pods-SignalR-SwiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8893B2F1770B24873610B1CA /* [CP] Check Pods Manifest.lock */ = {
@@ -463,36 +458,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE9A67E61EA448B742E04260 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignalRSwift/Pods-SignalRSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E29934DC4C7132EA079822B1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignalR-SwiftTests/Pods-SignalR-SwiftTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F71AD12E7750A42FE3671D48 /* [CP] Check Pods Manifest.lock */ = {
@@ -688,7 +653,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -710,7 +675,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autosoftdms.SignalR-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -720,13 +685,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8Z35TU97D6;
+				DEVELOPMENT_TEAM = WY68KV34G4;
 				INFOPLIST_FILE = "SignalR-SwiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autosoftdms.SignalR-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -736,12 +701,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8Z35TU97D6;
+				DEVELOPMENT_TEAM = WY68KV34G4;
 				INFOPLIST_FILE = "SignalR-SwiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autosoftdms.SignalR-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

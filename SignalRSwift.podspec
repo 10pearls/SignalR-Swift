@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "This is a signalR client written purely in swift using Alamofire, SwiftWebSockets and ObjectMapper"
 
-  s.homepage     = "https://github.com/AutosoftDMS/SignalR-Swift"
+  s.homepage     = "https://github.com/irfangul10pearls/SignalR-Swift"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -57,14 +57,14 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "12.0"
 
-  s.source       = { :git => "https://github.com/AutosoftDMS/SignalR-Swift.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/irfangul10pearls/SignalR-Swift.git", :tag => "#{s.version}" }
 
   s.source_files  = "SignalR-Swift/**/*.swift"
   s.exclude_files = "Classes/Exclude"
 
-  s.dependency "Alamofire", "~> 4.2"
-  s.dependency "Starscream", "~> 3.0"
+  s.dependency "Alamofire", "4.8.2"
+  s.dependency "Starscream", "3.1.0"
 
 end
