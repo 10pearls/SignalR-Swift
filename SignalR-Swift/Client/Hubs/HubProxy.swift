@@ -39,6 +39,14 @@ public class HubProxy: HubProxyProtocol {
             subscription(args)
         }
     }
+    
+    public func unSubcribeEvent(eventName: String) -> Bool{
+        if let subscription = self.subscriptions.removeValue(forKey: eventName) {
+            return true
+        }
+        
+        return false
+    }
 
     // MARK: - Publish
 
