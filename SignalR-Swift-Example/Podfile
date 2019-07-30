@@ -6,7 +6,7 @@ target 'SignalR-Swift-Example' do
   use_frameworks!
 
   # Pods for SignalR-Swift-Example
-  pod 'SignalRSwift', :tag => '2.1.0' , :git => 'https://github.com/irfangul10pearls/SignalR-Swift.git'
+  pod 'SignalRSwift', :tag => '2.1.1' , :git => 'https://github.com/irfangul10pearls/SignalR-Swift.git'
 
   target 'SignalR-Swift-ExampleTests' do
     inherit! :search_paths
