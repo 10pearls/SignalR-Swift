@@ -1,33 +1,33 @@
 PODS:
   - Alamofire (4.8.2)
-  - SignalRSwift (2.1.0):
+  - SignalRSwift (2.1.2):
     - Alamofire (= 4.8.2)
     - Starscream (= 3.1.0)
   - Starscream (3.1.0)
 
 DEPENDENCIES:
-  - SignalRSwift (from `https://github.com/irfangul10pearls/SignalR-Swift.git`, tag `2.1.0`)
+  - SignalRSwift (from `https://github.com/10pearls/SignalR-Swift.git`, tag `2.1.2`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - Starscream
 
 EXTERNAL SOURCES:
   SignalRSwift:
-    :git: https://github.com/irfangul10pearls/SignalR-Swift.git
-    :tag: 2.1.0
+    :git: https://github.com/10pearls/SignalR-Swift.git
+    :tag: 2.1.2
 
 CHECKOUT OPTIONS:
   SignalRSwift:
-    :git: https://github.com/irfangul10pearls/SignalR-Swift.git
-    :tag: 2.1.0
+    :git: https://github.com/10pearls/SignalR-Swift.git
+    :tag: 2.1.2
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  SignalRSwift: ec6ec7030dd3d2bf66820aa0c71c3036bf52339c
+  SignalRSwift: 9501652c3ba9a902b129996a8f7ddfa6b3f4cf5c
   Starscream: 08172b481e145289c4930cb567230fb55897cfa4
 
-PODFILE CHECKSUM: 8a75d75256856c0f4338a64771f42fcec042d35b
+PODFILE CHECKSUM: 16d128167500e4100d64f176c33936346a1713c1
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.10.1
