@@ -25,8 +25,9 @@ public class HttpTransport: ClientTransportProtocol {
         let url = connection.url.appending("negotiate")
 
         let parameters = self.getConnectionParameters(connection: connection, connectionData: connectionData)
+        let headers = connection.headers
 
-        let encodedRequest = connection.getRequest(url: url, httpMethod: .get, encoding: URLEncoding.default, parameters: parameters, timeout: 30.0)
+        let encodedRequest = connection.getRequest(url: url, httpMethod: .get, encoding: URLEncoding.default, parameters: parameters, timeout: 30.0, headers: headers)
 
         encodedRequest.validate().responseJSON { (response: DataResponse<Any>) in
             switch response.result {
